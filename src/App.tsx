@@ -69,7 +69,7 @@ export default App;
 function Header() {
   return (
     <div className="flex flex-col">
-      <h2 className="font-bold text-lg">💬 Real Time Chat</h2>
+      <h2 className="font-bold text-lg">Real Time Chat</h2>
       <p className="text-[#393E46] text-sm">Temporary room that will be deleted after all users exit</p>
     </div>
   );
