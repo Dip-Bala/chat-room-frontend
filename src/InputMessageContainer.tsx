@@ -27,7 +27,7 @@ export function InputMessageContainer({ roomId, allMessages, setAllMessages }: a
             <div className="w-full bg-[#222222] rounded-md p-2 text-[#898989]">
                 Room Code: <strong>{roomId}</strong>
             </div>
-            <div className="border border-[#545454] w-full h-[500px] p-4 rounded-sm overflow-auto">
+            <div className="border border-[#545454] w-full h-[500px] p-4 rounded-sm overflow-auto hide-scrollbar">
                 {allMessages.map((message: any, idx: number) => (
                     <div key={idx} className={`mb-4 flex gap-2 ${message.sender === "server" ? 'justify-start': 'justify-end'}`} >
                         <span className={`p-2 rounded-sm ${message.sender === "server" ? "bg-white text-black" : "bg-[#222222]"}`}>
